@@ -22,14 +22,14 @@ namespace Tyuiu.TyazhovLA.Sprint2.Task5.V9
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("Введите текущий месяц:");
-            int m = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите текущеее число:");
             int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите текущеее число:");
+            int m = Convert.ToInt32(Console.ReadLine());
             string res = ds.FindDateOfNextDay(m,n);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            if (n>0 && n<32 && m>0 && m<13) Console.WriteLine("Дата следующего дня:"+ res);
+            if (m>0 && m<32 && n>0 && n<13) Console.WriteLine("Дата следующего дня:"+ res);
             else Console.WriteLine("Неправильный номер месяца или числа");
             Console.ReadKey();
 

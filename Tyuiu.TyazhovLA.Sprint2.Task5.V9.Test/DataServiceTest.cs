@@ -8,8 +8,8 @@ namespace Tyuiu.TyazhovLA.Sprint2.Task5.V9.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            int x = 5; int  y= 31;
-            string wait = "Èþíü 1";
+            int x = 31; int  y= 5;
+            string wait = "01.06";
             string res = ds.FindDateOfNextDay(x,y);
             Assert.AreEqual(wait, res);
         }

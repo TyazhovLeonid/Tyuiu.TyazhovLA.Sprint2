@@ -7,50 +7,51 @@ namespace Tyuiu.TyazhovLA.Sprint2.Task5.V9.Lib
         public string FindDateOfNextDay(int m, int n)
         {
             string res;
-            n += 1;
-            if (n==32) 
-            { n=1;m += 1; }
-            switch (m) 
+            m += 1;
+            if (m==32) 
+            { m=1;n += 1; }
+            res = m.ToString("D2")+".";
+            switch (n) 
             {
             case 1:
-                    res = "Январь";
+                    res += "01";
                     break;
             case 2:
-                    res = "Февраль";
+                    res += "02";
                     break;
             case 3:
-                    res = "Март";
+                    res += "03";
                     break;
             case 4:
-                    res = "Апрель";
+                    res += "04";
                     break;
             case 5:
-                    res = "Май";
+                    res += "05";
                     break;
             case 6:
-                    res = "Июнь";
+                    res += "06";
                     break;
             case 7:
-                    res = "Июль";
+                    res += "07";
                     break;
             case 8:
-                    res = "Август";
+                    res += "08";
                     break;
             case 9:
-                    res = "Сентябрь";
+                    res += "09";
                     break;
             case 10:
-                    res = "Октябрь";
+                    res += "10";
                     break;
             case 11:
-                    res = "Ноябрь";
+                    res += "11";
                     break;
             case 12:
-                    res = "Декабрь";
+                    res += "12";
                     break;
             default: throw new NotImplementedException();
             }
-            res +=" " + n;
+            
             return res;
         }
     }
